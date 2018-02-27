@@ -12,13 +12,14 @@ The best location is [Vim Awesome](https://vimawesome.com) for finding packages.
 
 These are all found from Vim Awesome, and work great for my basic setup. 
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'scrooloose/nerdtree'
-Plugin 'dracula/vim'
-
+`
+Plugin 'VundleVim/Vundle.vim' 
+Plugin 'bling/vim-airline'  
+Plugin 'tpope/vim-fugitive'  
+Plugin 'vim-airline/vim-airline-themes'  
+Plugin 'scrooloose/nerdtree'  
+Plugin 'dracula/vim'  
+`
 
 
 
