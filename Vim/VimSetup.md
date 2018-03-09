@@ -40,6 +40,8 @@ To keep your home directory clean, we need three subfolders created (swap, backu
 
 ## Install the Powerline fonts
 
+Something to note - if you are installing vim on a jump host or remote SSH session, you only need the fonts for your terminal host, NOT the remote host running vim. This confused me so many times. 
+
 It's not required but if you want the full Powerline look (it's those chevrons at the bottom of the screen) then you need to add the Powerline fonts on the host which you run the terminal (not the remote host). So if you are working on a local terminal, then install Powerline locally, if you are working from a remote SSH session, only install the fonts on your local laptop. 
 
 The fonts are located at [Powerline Repo](https://github.com/powerline/fonts) and the instructions are fairly simple. 
