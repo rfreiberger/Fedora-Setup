@@ -1,29 +1,38 @@
-# .bash_profile
+# Notes: This is a general bash_profile which works on most POSIX systems 
+# including Linux/BSD/Darwin/Ubuntu on Windows
+# Updated: 3/9/2018
+#########################
+## Default Area        ##
+#########################
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
+        . ~/.bashrc
 fi
 
-# User specific environment and startup programs
+# Get the profile
+if [ -f ~/.profile ]; then
+       . ~/.profile
+fi
+
+# Environments and Startup
+# IMPORTANT NOTE - For users of Homebrew,RVM, or any application that installs 
+# under the home directories or unusally areas, you will need to add the paths here.
 
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
 export PATH
 
+# Aliases add here
+# User specific environment and startup programs
+# aliases
+alias ssh='ssh -o "StrictHostKeyChecking no"'
+alias sshaws='ssh -i "~/.ssh/master_key_2018.pem"'
 
-
-
-# .bash_profile
-#
-# Aliases and functions
-#
-if [ -f ~/.bashrc ]; then
-    source ~/.bashrc
-fi
-if [ -f ~/.profile ]; then
-    source ~/.profile
-fi
+########################################
+## Do not edit the Git code           ##
+## I'm not sure how it works          ##
+########################################
 
 # This git status code was found on the Internet
 # not sure who created it but it's extremely helpful
@@ -80,8 +89,4 @@ function parse_git_dirty {
 #
 export PS1="\[\e[33m\][\[\e[m\] \[\e[35m\]\@\[\e[m\] \[\e[33m\]]\[\e[m\] \h \[\e[34m\][\[\e[m\] \[\e[32m\]\w\[\e[m\] \[\e[34m\]]\[\e[m\] \[\e[30;41m\]\`parse_git_branch\`\[\e[m\] \[\e[31m\]\\n$\[\e[m\] "
 
-# User specific environment and startup programs
-# aliases
-alias ssh='ssh -o "StrictHostKeyChecking no"'
-alias sshaws='ssh -i "~/.ssh/master_key_2018.pem"'
 
