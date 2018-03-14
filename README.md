@@ -9,3 +9,6 @@ I'm using the Powerline fonts which allows the cool looking symbols and chevrons
 
 I tried using other terminals but for me on Fedora, the default terminal works best. 
 
+## Updates for using this with Mac OSX
+
+I added all of the features to my Mac and they work fine, so I would recommend this guide for Mac and Linux users. 
